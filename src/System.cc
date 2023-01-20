@@ -255,7 +255,7 @@ cv::Mat System::TrackMonocular(const cv::Mat &im, const double &timestamp)
     mTrackedKeyPointsUn = mpTracker->mCurrentFrame.mvKeysUn;
 
     if (Tcw.rows != 0){
-        MapPub->SetCurrentCameraPose(Tcw);
+        //MapPub->SetCurrentCameraPose(Tcw);
     }
 
     //MapPub->Refresh();
